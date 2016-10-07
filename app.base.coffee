@@ -1,3 +1,10 @@
+##########################
+##
+## By Ivan Kavuma for Event calendar
+## Date December 2015
+##
+#############################
+
 app = angular.module 'smartcal.app.base', ['smartcal.api','smartcal.util','ui.calendar','angularSpinner','ngSanitize','ui.bootstrap','ngAnimate','mymodal']
 
 app.controller 'AppController', ['Util','$location', '$anchorScroll', '$filter' ,'$compile' ,'$http','$log','$scope', 'Event', 'UserEvent','Location','Category','Contact', 'AuthUser','User',( Util,$location, $anchorScroll , $filter,$compile, $http , $log , $scope , Event, UserEvent, Location, Category,Contact, AuthUser, User ) ->
