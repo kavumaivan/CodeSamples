@@ -119,8 +119,6 @@ class Facebookapi():
                     first_name = "",
                     last_name = "")
 
-        #  location. location u'location': u'12405 W Emigh Rd, Tucson, AZ 85743, USA'
-        # u'place': {u'name': u'4300 E garden lane, Cottonwood, AZ 86326'}, u'id': u'503302549858424', u'name': u'Test event'}
         #print "facebookEvent location =>" ,facebookEvent["place"]
         location = Location(address="no venue yet",city="",state="",zip="")
         if facebookEvent.has_key("place"):
